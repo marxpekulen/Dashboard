@@ -1,0 +1,93 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.5
+	font-family: $default-font
+	color: $text-color
+	overflow-x: hidden
+	background-color: #fafafa
+	padding:
+		left: 50px
+		top: 50px
+	@media (min-width: $lg)
+		padding:
+			left: 80px
+			top: 80px
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.text-center
+	text-align: center
+
+::selection
+	background-color: $accent
+	color: #fff
+
+input, button
+	border: none
+	outline: none
+	-webkit-appearance: none
+
+ul, ol
+	margin: 0
+	padding: 0
+
+h1, h2, h3, h4, h5, h6
+	margin: 0
+	padding: 0
+
+a
+	color: $text-color
+	text-decoration: none
+
+@import "components"
+@import "header"
+@import "nav"
+@import "content"
+@import "overview"
+@import "statistics"
+@import "activities"
+@import "media" // Всегда в конце

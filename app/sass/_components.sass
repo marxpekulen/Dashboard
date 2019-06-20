@@ -1,0 +1,44 @@
+.def-heading
+	font-size: 20px
+	font-weight: 600
+	&--sm
+		font-size: 18px
+
+.def-subheading
+	font-size: 13px
+	color: $label-color
+	font-weight: 400
+	margin:
+		top: 10px
+		bottom: 12px
+	@media (min-width: $lg)
+		margin-bottom: 28px
+
+.def-quantity
+	display: block
+	font:
+		size: 24px
+		weight: 300
+	@media (min-width: $md)
+		font-size: 30px
+	@media (min-width: $lg)
+		font-size: 46px
+
+.hor-separator
+	display: inline-block
+	width: 1px
+	height: 30px
+	background-color: rgba($label-color, .5)
+	margin:
+		top: 12px
+		bottom: 12px
+
+.def-summ
+	display: block
+	font:
+		size: 13px
+		weight: 600
+	&--increase
+		color: $accent
+	&--decrease
+		color: $warning-color

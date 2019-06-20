@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Title</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+
+	<div class="app">
+		<header class="main-header">
+			<a href="/" class="main-header__logo">
+				<img src="img/logo.svg" alt="logo">
+			</a>
+			<button class="main-header__bars js-open-nav"></button>
+			<div class="main-header__right">
+				<button class="main-header__add-activity">
+					<img src="img/add.svg" alt="plus">
+					New activity
+				</button>
+				<div class="main-header__profile">
+					<button class="main-header__btn main-header__btn--search"></button>
+					<button class="main-header__btn main-header__btn--notifications"></button>
+					<div class="main-header__user h-user">
+						<img src="img/user1.png" alt="user" class="h-user__img">
+						<span class="h-user__is-online"></span>
+					</div>
+				</div>
+			</div>
+		</header>
+		<nav class="main-nav">
+			<a href="#" class="main-nav__link main-nav__link--active">
+				<img src="img/nav/overview.svg" alt="overview">
+			</a>
+			<a href="#" class="main-nav__link">
+				<img src="img/nav/activities.svg" alt="activities">
+			</a>
+			<a href="#" class="main-nav__link">
+				<img src="img/nav/bookings.svg" alt="bookings">
+			</a>
+			<a href="#" class="main-nav__link">
+				<img src="img/nav/balance.svg" alt="balance">
+			</a>
+			<a href="#" class="main-nav__link">
+				<img src="img/nav/favorites.svg" alt="favorites">
+			</a>
+			<a href="#" class="main-nav__link">
+				<img src="img/nav/history.svg" alt="history">
+			</a>
+			<a href="#" class="main-nav__link">
+				<img src="img/nav/settings.svg" alt="settings">
+			</a>
+			<a href="#" class="main-nav__link">
+				<img src="img/nav/exit.svg" alt="exit">
+			</a>
+		</nav>
+		<main class="content">
+			<div class="overview">
+				<h2 class="def-heading">Overview</h2>
+				<div class="overview__cards">
+					<div class="overview-item">
+						<div class="overview-item__img">
+							<img src="img/earnings.svg" alt="earnings">
+						</div>
+						<span class="overview-item__summ">$ 3.864</span>
+						<span class="overview-item__quantity overview-item__quantity--increase">
+							<img src="img/increase.svg" alt="arrow up">
+							6.2 %
+						</span>
+						<h3 class="overview-item__title">Earnings</h3>
+					</div>
+					<div class="overview-item">
+						<div class="overview-item__img">
+							<img src="img/booked-icon.svg" alt="booked">
+						</div>
+						<span class="overview-item__summ">628</span>
+						<span class="overview-item__quantity overview-item__quantity--increase">
+							<img src="img/increase.svg" alt="arrow up">
+							5.5 %
+						</span>
+						<h3 class="overview-item__title">Booked</h3>
+					</div>
+					<div class="overview-item">
+						<div class="overview-item__img">
+							<img src="img/comment.svg" alt="comment">
+						</div>
+						<span class="overview-item__summ">716</span>
+						<span class="overview-item__quantity overview-item__quantity--increase">
+							<img src="img/increase.svg" alt="arrow up">
+							1.5 %
+						</span>
+						<h3 class="overview-item__title">Comments</h3>
+					</div>
+					<div class="overview-item">
+						<div class="overview-item__img">
+							<img src="img/favorites.svg" alt="favorites">
+						</div>
+						<span class="overview-item__summ">1,287</span>
+						<span class="overview-item__quantity overview-item__quantity--decrease">
+							<img src="img/decrease.svg" alt="arrow down">
+							4.7 %
+						</span>
+						<h3 class="overview-item__title">Added to favorites</h3>
+					</div>
+				</div>
+			</div>
+			<div class="statistics">
+				<div class="statistics__balance">
+					<div class="statistics__current-balance">
+						<h2 class="def-heading def-heading--sm">Current balance</h2>
+						<h3 class="def-subheading">Earnings this month</h3>
+						<span class="def-quantity">$ 1.357</span>
+						<span class="hor-separator"></span>
+						<span class="def-summ def-summ--increase">+ $ 264</span>
+					</div>
+					<div class="statistics__bookings">
+						<span class="def-quantity">46</span>
+						<h3 class="def-subheading">Bookings this month</h3>
+					</div>
+				</div>
+				<div class="statistics__earnings">
+					<h2 class="def-heading def-heading--sm">Earnings summary</h2>
+					<h3 class="def-subheading">This year</h3>
+					<div class="statistics__chart statistics-chart">
+						<div class="statistics-chart__area">
+							<div class="statistics-chart__bars">
+								<span data-value="0.45"></span>
+								<span data-value="0.27"></span>
+								<span data-value="0.16"></span>
+								<span data-value="0.30"></span>
+								<span data-value="0.62"></span>
+								<span data-value="0.100"></span>
+								<span data-value="0.77"></span>
+								<span data-value="0.55"></span>
+								<span data-value="0.45"></span>
+								<span data-value="0.30"></span>
+								<span data-value="0.20"></span>
+								<span data-value="0.8"></span>
+							</div>
+							<div class="statistics-chart__lines">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</div>
+						<div class="statistics-chart__legend">
+							<span>Jan</span>
+							<span>Mar</span>
+							<span>May</span>
+							<span>Jul</span>
+							<span>Sep</span>
+							<span>Nov</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="activities">
+				<div class="activities__heading">
+					<h2 class="def-heading def-heading--sm">Activities</h2>
+					<div class="activities__controlls activities-controlls">
+						<button class="activities-controlls__btn activities-controlls__btn--prev"></button>
+						<button class="activities-controlls__btn activities-controlls__btn--next"></button>
+					</div>
+				</div>
+				<div class="owl-carousel activities__carousel activities-carousel">
+					<a href="#" class="activities-carousel__item add-activity">
+						<span class="add-activity__plus"></span>
+						<span class="add-activity__caption">New activity</span>
+					</a>
+					<div class="activities-carousel__item activity">
+						<div class="activity__img">
+							<img src="img/photo/1.png" alt="1">
+						</div>
+						<div class="activity__content">
+							<h2 class="activity__heading">Skate holiday islands</h2>
+							<div class="activity__bottom">
+								<a href="#" class="activity__edit">Edit activity</a>
+								<a href="#" class="activity__like">137</a>
+							</div>
+						</div>
+					</div>
+					<div class="activities-carousel__item activity">
+						<div class="activity__img">
+							<img src="img/photo/2.png" alt="2">
+						</div>
+						<div class="activity__content">
+							<h2 class="activity__heading">Surfing balance</h2>
+							<div class="activity__bottom">
+								<a href="#" class="activity__edit">Edit activity</a>
+								<a href="#" class="activity__like">78</a>
+							</div>
+						</div>
+					</div>
+					<div class="activities-carousel__item activity">
+						<div class="activity__img">
+							<img src="img/photo/3.png" alt="3">
+						</div>
+						<div class="activity__content">
+							<h2 class="activity__heading">Basketball Training Secrets</h2>
+							<div class="activity__bottom">
+								<a href="#" class="activity__edit">Edit activity</a>
+								<a href="#" class="activity__like">314</a>
+							</div>
+						</div>
+					</div>
+					<div class="activities-carousel__item activity">
+						<div class="activity__img">
+							<img src="img/photo/1.png" alt="1">
+						</div>
+						<div class="activity__content">
+							<h2 class="activity__heading">Skate holiday islands</h2>
+							<div class="activity__bottom">
+								<a href="#" class="activity__edit">Edit activity</a>
+								<a href="#" class="activity__like">137</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>

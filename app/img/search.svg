@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="21px" viewBox="0 0 20 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>search</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="account" transform="translate(-1221.000000, -30.000000)" fill="#9EA0A5" fill-rule="nonzero">
+            <g id="top-navigation" transform="translate(24.000000, 15.000000)">
+                <path d="M1204,29 C1200.13401,29 1197,25.8659932 1197,22 C1197,18.1340068 1200.13401,15 1204,15 C1207.86599,15 1211,18.1340068 1211,22 C1211,25.8659932 1207.86599,29 1204,29 Z M1204,27 C1206.76142,27 1209,24.7614237 1209,22 C1209,19.2385763 1206.76142,17 1204,17 C1201.23858,17 1199,19.2385763 1199,22 C1199,24.7614237 1201.23858,27 1204,27 Z M1209.29289,29.7071068 L1210.70711,28.2928932 L1216.20711,33.7928932 L1214.79289,35.2071068 L1209.29289,29.7071068 Z" id="search"></path>
+            </g>
+        </g>
+    </g>
+</svg>

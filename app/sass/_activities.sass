@@ -1,0 +1,98 @@
+.activities
+	margin-top: 57px
+	&__heading
+		margin-bottom: 36px
+		display: flex
+		justify-content: space-between
+
+.activities-controlls
+	display: flex
+	align-items: center
+	&__btn
+		display: inline-block
+		width: 20px
+		height: 20px
+		background: url(../img/arrow.svg) center no-repeat
+		cursor: pointer
+		transition: $transition
+		&:hover
+			opacity: .6
+		&--prev
+			transform: rotate(180deg)
+	&__pages
+		list-style: none
+		margin:
+			left: 6px
+			right: 6px
+		li
+			display: inline-block
+			font:
+				size: 12px
+				weight: 600
+			transition: $transition
+			color: $label-color
+			cursor: pointer
+			& + li
+				&:before
+					content: "/"
+					margin-right: 4px
+			&.active
+				color: $text-color
+			&:hover
+				color: $text-color
+
+.activities-carousel
+	&__item
+		background-color: #fff
+	.owl-item
+		@media (min-width: $lg)
+			&:nth-child(2n)
+				padding-top: 40px
+
+.add-activity
+	background-color: transparent
+	border: 1px dashed #9ea0a5
+	min-height: 312px
+	display: flex
+	align-items: center
+	justify-content: center
+	flex-direction: column
+	transition: $transition
+	&:hover
+		background-color: #fff
+		.add-activity__plus
+			background-color: #000
+	&__plus
+		width: 68px
+		height: 68px
+		border-radius: 34px
+		background: $text-color url(../img/plus.svg) center no-repeat
+		margin-bottom: 16px
+		transition: $transition
+	&__caption
+		font:
+			size: 13px
+			weight: 600
+
+.activity
+	&__content
+		padding: 14px 20px 25px
+	&__heading
+		font:
+			size: 15px
+			weight: 400
+	&__bottom
+		margin-top: 14px
+		display: flex
+		justify-content: space-between
+	&__edit
+		font:
+			size: 13px
+			weight: 600
+		border-bottom: 2px solid $text-color
+	&__like
+		font:
+			size: 14px
+			weight: 600
+		padding-right: 30px
+		background: url(../img/like.svg) right center no-repeat

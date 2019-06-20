@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="22px" viewBox="0 0 20 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>activities</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="account" transform="translate(-30.000000, -228.000000)" fill="#2D2E2C" fill-rule="nonzero">
+            <g id="side-navigation" transform="translate(29.000000, 150.000000)">
+                <path d="M9.86721778,92 L2,92 C1.15216235,92 0.689006285,91.0111425 1.23177872,90.3598156 L11.2317787,78.3598156 C11.8710317,77.5927121 13.1161321,78.1332006 12.9922779,79.1240347 L12.1327822,86 L20,86 C20.8478376,86 21.3109937,86.9888575 20.7682213,87.6401844 L10.7682213,99.6401844 C10.1289683,100.407288 8.88386786,99.8667994 9.00772212,98.8759653 L9.86721778,92 Z M10.5846606,82.2604572 L4.13504161,90 L11,90 C11.601498,90 12.0668845,90.5271816 11.9922779,91.1240347 L11.4153394,95.7395428 L17.8649584,88 L11,88 C10.398502,88 9.93311548,87.4728184 10.0077221,86.8759653 L10.5846606,82.2604572 Z" id="activities"></path>
+            </g>
+        </g>
+    </g>
+</svg>

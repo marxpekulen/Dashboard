@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="20px" viewBox="0 0 16 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>bookings</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="account" transform="translate(-32.000000, -309.000000)" fill="#2D2E2C" fill-rule="nonzero">
+            <g id="side-navigation" transform="translate(29.000000, 150.000000)">
+                <path d="M5,173.336816 C5.45462769,173.120846 5.96320135,173 6.5,173 L17,173 L17,161 L5.5,161 C5.22385763,161 5,161.223858 5,161.5 L5,173.336816 Z M17,175 L6.5,175 C5.67157288,175 5,175.671573 5,176.5 C5,176.776142 5.22385763,177 5.5,177 L17,177 L17,175 Z M5.5,159 L19,159 L19,179 L5.5,179 C4.11928813,179 3,177.880712 3,176.5 L3,161.5 C3,160.119288 4.11928813,159 5.5,159 Z" id="bookings"></path>
+            </g>
+        </g>
+    </g>
+</svg>

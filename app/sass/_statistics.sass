@@ -1,0 +1,62 @@
+.statistics
+	display: grid
+	grid-gap: 15px
+	margin-top: 30px
+	@media (min-width: $md)
+		grid-gap: 30px
+		grid-template-columns: 0.3fr 0.7fr
+		margin-top: 57px
+	@media (min-width: $lg)
+		grid-template-columns: 0.24fr 0.76fr
+	&__bookings
+		margin-top: 20px
+		@media (min-width: $md)
+			margin-top: 40px
+		@media (min-width: $lg)
+			margin-top: 92px
+
+.statistics-chart
+	&__area
+		height: 278px
+		position: relative
+	&__lines
+		height: 278px
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		span
+			display: inline-flex
+			border: 1px dashed rgba(#4a4a4a, .15)
+			&:last-child
+				border: 1px solid rgba(#9ea0a5, .2)
+	&__legend
+		display: flex
+		justify-content: space-between
+		margin-top: 20px
+		span
+			display: inline-flex
+			flex: 0 1 16.66%
+			font-size: 12px
+			color: $label-color
+			text-transform: lowercase
+	&__bars
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		height: 278px
+		display: flex
+		justify-content: space-between
+		span
+			display: inline-flex
+			width: 7px
+			border-radius: 3px
+			height: 278px
+			background-color: $accent
+			transition: 0.8s ease-in
+			transform: scaleY(0)
+			transform-origin: center bottom
+			margin:
+				left: 8px
+				right: 8px

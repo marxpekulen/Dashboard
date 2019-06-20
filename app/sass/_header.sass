@@ -1,0 +1,110 @@
+.main-header
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	z-index: 10
+	display: flex
+	align-items: center
+	background-color: #fff
+	border-bottom: 1px solid $border-color
+	&__logo
+		display: inline-flex
+		align-items: center
+		justify-content: center
+		flex: 0 0 50px
+		height: 50px
+		border-right: 1px solid $border-color
+		transition: $transition
+		@media (min-width: $lg)
+			height: 80px
+			flex: 0 0 80px
+		&:hover
+			background-color: $border-color
+	&__bars
+		display: inline-flex
+		width: 40px
+		height: 40px
+		background: url(../img/menu.svg) center no-repeat
+		border: none
+		margin-left: 10px
+		cursor: pointer
+		transition: $transition
+		@media (min-width: $lg)
+			margin-left: 20px
+		&:hover
+			opacity: .5
+	&__right
+		display: flex
+		justify-content: flex-end
+		align-items: center
+		flex-grow: 1
+	&__add-activity
+		display: none
+		align-items: center
+		padding: 10px 12px
+		font:
+			size: 13px
+			weight: 600
+		cursor: pointer
+		border: 2px solid #9ea0a5
+		border-radius: 3px
+		line-height: 1.1
+		transition: $transition
+		@media (min-width: $md)
+			display: inline-flex
+		@media (min-width: $lg)
+			padding: 16px 20px
+		&:hover
+			background-color: $accent
+			border-color: $accent
+			color: #fff
+			img
+				filter: brightness(0) invert(1)
+		img
+			margin-right: 8px
+			transition: $transition
+	&__profile
+		display: flex
+		align-items: center
+		height: 50px
+		margin-left: 15px
+		padding:
+			left: 8px
+			right: 20px
+		border-left: 1px solid $border-color
+		@media (min-width: $lg)
+			height: 80px
+			padding:
+				left: 18px
+				right: 30px
+	&__btn
+		width: 40px
+		height: 40px
+		cursor: pointer
+		background-position: center
+		background-repeat: no-repeat
+		&--search
+			background-image: url(../img/search.svg)
+		&--notifications
+			background-image: url(../img/notifications.svg)
+		& + .main-header__btn
+			margin-left: 12px
+			@media (min-width: $lg)
+				margin-left: 38px
+
+.h-user
+	position: relative
+	display: inline-flex
+	margin-left: 26px
+	@media (min-width: $lg)
+		margin-left: 48px
+	&__is-online
+		position: absolute
+		bottom: 0
+		right: -4px
+		width: 12px
+		height: 12px
+		border: 2px solid #fff
+		background-color: $accent
+		border-radius: 6px
