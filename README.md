@@ -1,6 +1,6 @@
 # Dashboard page
 
-Dashboard page html/css using css-flexbox and css-grid
+Dashboard page html/css layout (css-flexbox and css-grid used)
 
 <a href="https://marxpekulen.github.io/Dashboard/docs/">Demo</a>
 
