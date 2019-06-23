@@ -34,6 +34,8 @@
 			margin-left: 20px
 		&:hover
 			opacity: .5
+		&--opened
+			transform: rotate(90deg)
 	&__right
 		display: flex
 		justify-content: flex-end
@@ -88,10 +90,11 @@
 			background-image: url(../img/search.svg)
 		&--notifications
 			background-image: url(../img/notifications.svg)
-		& + .main-header__btn
-			margin-left: 12px
-			@media (min-width: $lg)
-				margin-left: 38px
+	&__search
+		display: inline-flex
+		margin-right: 12px
+		@media (min-width: $lg)
+			margin-right: 38px
 
 .h-user
 	position: relative
@@ -108,3 +111,42 @@
 		border: 2px solid #fff
 		background-color: $accent
 		border-radius: 6px
+
+.header-search-form
+	position: absolute
+	z-index: 2
+	top: 0
+	right: 0
+	background-color: #fff
+	padding: 7px
+	border: 1px solid $border-color
+	display: none
+	@media (min-width: $lg)
+		padding: 22px 16px
+	&__input
+		z-index: 10
+		width: 240px
+		height: 34px
+		border: 1px solid $border-color
+		padding:
+			left: 15px
+			right: 30px
+		font:
+			size: 13px
+			weight: 600
+		@media (min-width: $lg)
+			width: 400px
+	&__close
+		width: 34px
+		height: 34px
+		position: absolute
+		top: 50%
+		margin-top: -17px
+		right: 7px
+		display: inline-flex
+		align-items: center
+		justify-content: center
+		cursor: pointer
+		font-family: monospace, sans-serif
+		@media (min-width: $lg)
+			right: 16px

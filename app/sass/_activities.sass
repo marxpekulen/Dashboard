@@ -81,6 +81,8 @@
 		font:
 			size: 15px
 			weight: 400
+		&:hover
+			text-decoration: underline
 	&__bottom
 		margin-top: 14px
 		display: flex
@@ -90,6 +92,9 @@
 			size: 13px
 			weight: 600
 		border-bottom: 2px solid $text-color
+		transition: $transition
+		&:hover
+			border-bottom-color: transparent
 	&__like
 		font:
 			size: 14px

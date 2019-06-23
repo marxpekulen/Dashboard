@@ -8,25 +8,39 @@
 	background-color: #fff
 	z-index: 9
 	display: flex
-	align-items: center
+	// align-items: center
 	justify-content: center
 	flex-direction: column
-	padding-bottom: 25px
+	padding-top: 50px
+	transition: $transition
+	overflow: hidden
+	&--active
+		width: 190px !important
+		.main-nav__link span
+			opacity: 1
 	@media (min-width: $lg)
 		width: 80px
-		padding-bottom: 40px
+		padding-top: 80px
 	&__link
-		width: 40px
-		height: 40px
+		width: 50px
+		height: 50px
 		display: inline-flex
 		align-items: center
 		justify-content: center
 		opacity: .5
 		transition: $transition
+		position: relative
 		&--active, &:hover
 			opacity: 1
 		@media (min-width: $lg)
-			width: 60px
-			height: 60px
+			width: 80px
+			height: 80px
 		& + .main-nav__link
 			margin-top: 10px
+		span
+			position: absolute
+			top: 52%
+			left: 60px
+			transform: translateY(-50%)
+			opacity: 0
+			transition: $transition
