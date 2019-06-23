@@ -2,7 +2,7 @@
 
 Dashboard page html/css using css-flexbox and css-grid
 
-<a href="#">Demo</a>
+<a href="https://marxpekulen.github.io/Dashboard/docs/">Demo</a>
 
 ## Install
 
